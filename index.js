@@ -6,6 +6,7 @@ app.listen(app.get('port'), (=>{
     console.log('Estoy en el puerto'+app.get('port'))
 }))
 
-//middlewares: funciones que se ejecutan antes de las rutas 
+//middlewares: funciones pequeñas que se ejecutan antes de las rutas  son para tareas especificas
+app.use(cors());//permitior conexiones remotas en mi backend (usa cors) 
 
 //rutas
