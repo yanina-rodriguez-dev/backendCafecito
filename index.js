@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors'; 
 import morgan from 'morgan';
 import path from 'path';
+import 'dotenv/config'; 
+import 'dotenv/config';
+import './src/database/dbConnection';
 
 //usar un puerto 
 const app =express();
@@ -18,7 +21,7 @@ app.use(express.json())////permite  a mi app recibir objetos de tipo json en los
 app.use(morgan('dev')) //me muestra en la consola informacion extra de las solicitudes get-post - put etc
 console.log(__dirname); // la variable __dirname siempre devuelve l ruta absoluta de donde vive el 
 app.use(express.static( path.join(__dirname, '/public')))// esto nos permite poder ejecutar los archivos de mi proyecto en la ruta raiz
-ej: http
+//ej: http
 
 
 //rutas
