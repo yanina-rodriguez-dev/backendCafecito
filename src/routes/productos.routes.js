@@ -51,6 +51,6 @@ router
   .route("/productos/:id")
   .get(obtenerProductos)
   .delete(borrarProducto)
-  .put(editarProducto);
+  .put(validarProducto,editarProducto);
 
 export default router;
